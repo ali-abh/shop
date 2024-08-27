@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" type="text/css"  href="/static/makeup/css/1.css">
+    <link rel="stylesheet" type="text/css"  href="/static/makeup/css/2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div> 
-             <h1><a href="/main/page">HOME</a></h1>   <h1><a href="/shops">SHOPS</a></h1>
-    </div>
 </head>
 <body>
 
-    
+    <div> 
+        <h1><a class="fa fa-home" href="/main/page">HOME</a></h1>   <h1><a class="		fa fa-shopping-cart" href="/shops">SHOPS</a></h1>
+</div>
 
-    <ul>
+    <ul class="up">
         {%for item in makeupposts%}
             <div class="posts"> 
                 <h1>MAKEUP:</h1>
@@ -24,14 +24,14 @@
                 <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
                 <li><h2>expdate:</h2><h3>{{item.expdate}}</h3></li>
                 <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
-            {%for p in Mcomments%}
+            <!-- {%for p in Mcomments%}
                 <li><h3><a href="comments.html/{{p.pk}}">comments</a></h3></li>
-            {%endfor%}
+            {%endfor%} -->
             </div>
         {%endfor%}
     </ul>
             
-    <ul>
+    <ul class="up">
         {%for item in skincareposts%}
             <div class="posts"> 
                 <h1>SKINCARE:</h1>
@@ -41,13 +41,13 @@
                 <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
                 <li><h2>expdate:</h2><h3>{{item.expdate}}</h3></li>
                 <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
-                <li><h3><a href="comments.html">comments</a></h3></li>
+                <!-- <li><h3><a href="comments.html">comments</a></h3></li> -->
             </div>
         {%endfor%}
     </ul>
     
 
-    <ul>
+    <ul class="up">
         {%for item in digitalstufposts%}
             <div class="posts">
                 <h1>DIGITALSTUF:</h1> 
@@ -56,7 +56,7 @@
                 <li><h2>brand:</h2><h3>{{item.brandname}}</h3></li>
                 <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
                 <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
-                <li><h3><a href="comments.html">comments</a></h3></li>
+                <!-- <li><h3><a href="comments.html">comments</a></h3></li> -->
             </div>
         {%endfor%}
     </ul>

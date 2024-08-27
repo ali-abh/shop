@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from makeup.models import Shop,Skincare,Makeup,Digitalstuff,Comment
+from makeup.models import Shop,Skincare,Makeup,Digitalstuff
 
 # Create your views here.
 def Shops(request):

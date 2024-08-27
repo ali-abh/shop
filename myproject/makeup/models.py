@@ -75,10 +75,10 @@ class Sell(models.Model):
     receivername = models.CharField(max_length=25)
     
 
-class  Comment(models.Model): 
-    product = models.ForeignKey(Makeup,Digitalstuff,Skincare)
-    name = models.CharField(max_length=20) 
-    commenttext = models.TextField(max_length=250) 
-    shopname =models.ForeignKey(Shop,on_delete=models.CASCADE,default="shop")
+# class  Comment(models.Model): 
+#     product = models.ForeignKey(Makeup,Digitalstuff,Skincare)
+#     name = models.CharField(max_length=20) 
+#     commenttext = models.TextField(max_length=250) 
+#     shopname =models.ForeignKey(Shop,on_delete=models.CASCADE,default="shop")
       
 

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 #import settings
 from django.conf.urls import static
-from makeup.views import Shops,shop_details,allposts,makeup_comments,skincare_comments,digitalstuf_comments
+from makeup.views import Shops,shop_details,allposts
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('shops', Shops),
